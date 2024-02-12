@@ -4,15 +4,15 @@ https://0xazan.hashnode.dev/what-are-zero-knowledge-proofs-a-beginners-guide-to-
 ## Table of Contents
 
 - [What are Zero Knowledge Proofs?](#what-are-zero-knowledge-proofs)
-- [Applications and Use Cases](#applications-and-use-cases)
+    - [Applications and Use Cases](#applications-and-use-cases)
 - [What is a ZK-SNARK?](#what-is-a-zk-snark)
   - [ZK-SNARKs consist of three main components](#zk-snarks-consist-of-three-main-components)
   - [ZK-SNARK Processes Involves](#zk-snark-processes-involves)
   - [How ZK-SNARKs work](#how-zk-snarks-work)
-  - [ZK-SNARKs with SnarkJS and Circom](#zk-snarks-with-snarkjs-and-circom)
+- [ZK-SNARKs with SnarkJS and Circom](#zk-snarks-with-snarkjs-and-circom)
     - [Circom](#circom)
     - [SnarkJS](#snarkjs)
-- [SnarkJS and Circom have several benefits](#snarkjs-and-circom-have-several-benefits)
+    - [SnarkJS and Circom have several benefits](#snarkjs-and-circom-have-several-benefits)
 - [A Real-world Use Case: ZKP for Supply Chain Provenance](#a-real-world-use-case-zkp-for-supply-chain-provenance)
   - [Leveraging SnarkJS Circom on Scroll](#leveraging-snarkjs-circom-on-scroll)
     - [What is Scroll?](#what-is-scroll)
