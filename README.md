@@ -1,66 +1,30 @@
-## Foundry
+# Zero Knowledge Proofs Guide
+https://0xazan.hashnode.dev/what-are-zero-knowledge-proofs-a-beginners-guide-to-creating-your-first-zk-proof-with-circom-and-snarkjs-on-scroll-network
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Table of Contents
 
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- [What are Zero Knowledge Proofs?](#what-are-zero-knowledge-proofs)
+- [Applications and Use Cases](#applications-and-use-cases)
+- [What is a ZK-SNARK?](#what-is-a-zk-snark)
+  - [ZK-SNARKs consist of three main components](#zk-snarks-consist-of-three-main-components)
+  - [ZK-SNARK Processes Involves](#zk-snark-processes-involves)
+  - [How ZK-SNARKs work](#how-zk-snarks-work)
+  - [ZK-SNARKs with SnarkJS and Circom](#zk-snarks-with-snarkjs-and-circom)
+    - [Circom](#circom)
+    - [SnarkJS](#snarkjs)
+- [SnarkJS and Circom have several benefits](#snarkjs-and-circom-have-several-benefits)
+- [A Real-world Use Case: ZKP for Supply Chain Provenance](#a-real-world-use-case-zkp-for-supply-chain-provenance)
+  - [Leveraging SnarkJS Circom on Scroll](#leveraging-snarkjs-circom-on-scroll)
+    - [What is Scroll?](#what-is-scroll)
+    - [Features of Scroll](#features-of-scroll)
+    - [What is a circuit?](#what-is-a-circuit)
+    - [Setting Up Dependencies and Environment](#setting-up-dependencies-and-environment)
+    - [Compiling our circuit](#compiling-our-circuit)
+    - [Generate proving key](#generate-proving-key)
+    - [Foundry Setup](#foundry-setup)
+    - [Writing smart contract](#writing-smart-contract)
+    - [Deploying on Scroll Sepolia Testnet](#deploying-on-scroll-sepolia-testnet)
+    - [What is a witness?](#what-is-a-witness)
+    - [Computing the witness](#computing-the-witness)
+    - [Verifying from Smart Contract](#verifying-from-smart-contract)
+- [Conclusion](#conclusion)
